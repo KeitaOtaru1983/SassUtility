@@ -1,0 +1,35 @@
+@import "./_base.scss";
+@import "./_mixin.scss";
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:ptconvertrem(18);
+    @include line-height(24px,40);
+}
+
+.top{
+ 
+ @include lh-marginremove(24px,40,50px);  
+}
+
+.middle{
+  @include lh-marginremove(24px,40,50px);
+  position: relative;
+  &:after{
+      @include arrowMark(#ff0000,6px,6px);
+      position: absolute;
+      top:50%;
+      right: 0;
+  }
+  &:hover{
+    @include shakeanime(1px,0deg,0deg,2s);
+  }  
+}
+
+.bottom{
+    margin-top:lh-mpremove(24px,40,50px);
+   @include fadein(4s,ease-out,2s,1,normal,forwards);
+}

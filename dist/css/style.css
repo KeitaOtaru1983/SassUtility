@@ -1,0 +1,102 @@
+@charset 'UTF-8';
+/* mixin */
+/* くの字のマーク　*/
+/* function */
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 2.3rem;
+    line-height: 1.6;
+}
+
+.top
+{
+    line-height: 1.6;
+
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.middle
+{
+    line-height: 1.6;
+
+    position: relative; 
+
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+.middle:after
+{
+    position: absolute;
+    top: 50%;
+    right: 0; 
+
+    width: 6px;
+    height: 6px;
+
+    content: '';
+    transform: rotate(45deg);
+
+    border: 0;
+    border-top: solid 2px #f00;
+    border-right: solid 2px #f00;
+}
+.middle:hover
+{
+    animation: shake 2s infinite;
+}
+
+@keyframes shake
+{
+    0%
+    {
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+    25%
+    {
+        transform: translate(1px, 1px) rotateZ(0deg);
+    }
+    50%
+    {
+        transform: translate(0px, 1px) rotateZ(0deg);
+    }
+    75%
+    {
+        transform: translate(1px, 0px) rotateZ(0deg);
+    }
+    100%
+    {
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+}
+
+.bottom
+{
+    margin-top: 34px;
+
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
