@@ -3,15 +3,15 @@ Sassで痒い所に手が届くmixin,function
 
 ## Description
 
-・line-heightで発生した余白を取り除くmixin
-・line-heightの設定のmixin
-・ボタンやスマホサイトによくあるくの字マーク（右向き、左向き）を表示させるmixin
-・カンプの幅からコンテンツ幅のパーセンテージを出すmixin
-・フェードインアニメーションを出すmixin
-・震えるアニメのmixin
-・line-heightで発生した余白を取り除く関数を数値だけ設定するfunction
-・ptをpxに変換するmixin
-・ptをremに変換するmixin
+-line-heightで発生した余白を取り除くmixin
+-line-heightの設定のmixin
+-ボタンやスマホサイトによくあるくの字マーク（右向き、左向き）を表示させるmixin
+-カンプの幅からコンテンツ幅のパーセンテージを出すmixin
+-フェードインアニメーションを出すmixin
+-震えるアニメのmixin
+-line-heightで発生した余白を取り除く関数を数値だけ設定するfunction
+-ptをpxに変換するmixin
+-ptをremに変換するmixin
 
 
 ## Usage
